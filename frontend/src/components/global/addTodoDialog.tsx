@@ -82,7 +82,7 @@ const AddTodoDialog = () => {
     onOpenChange={open=>!open&&closeDailog()}
     >
       <DialogOverlay className="hidden"></DialogOverlay>
-      <DialogTrigger  ref={ref as React.LegacyRef<HTMLButtonElement>} >open</DialogTrigger>
+      {/* <DialogTrigger  ref={ref as React.LegacyRef<HTMLButtonElement>} >open</DialogTrigger> */}
       <DialogContent className="rounded-md bg-background/70 ">
       <form  onSubmit={handleSubmit(formSubmit,errorFn)}>
         <DialogHeader>
