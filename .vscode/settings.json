@@ -1,11 +1,11 @@
 {
     "files.autoSave": "afterDelay",
     "cursor.aipreview.enabled": true,
-    "cursor.chat.alwaysSearchWeb": false,
+    "cursor.chat.alwaysSearchWeb": true,
     "cursor.chat.premiumChatAutoScrollWhenAtBottom": true,
     "cursor.chat.showSuggestedFiles": true,
     "cursor.chat.smoothStreaming": true,
     "cursor.cpp.enablePartialAccepts": true,
-    "editor.quickSuggestionsDelay": 5,
+    "editor.quickSuggestionsDelay": 1,
     "editor.suggest.shareSuggestSelections": true
 }
