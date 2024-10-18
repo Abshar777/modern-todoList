@@ -17,7 +17,6 @@ import { useDispatch } from "react-redux";
 import { AppDispatch } from "@/store/store";
 import { RemoveTodo } from "@/store/todo/todoSlice";
 import { Itodo } from "@/store/todo/type";
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 
 const TimeSlot = ({
   hour,

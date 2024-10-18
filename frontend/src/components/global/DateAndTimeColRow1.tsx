@@ -6,9 +6,6 @@ import TimeColumn from "./TimeColumn";
 import WeekGrid from "./weekGrid";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import AddTodoDialog from "./addTodoDialog";
-import Info from "@/components/global/info";
-import EditTodoDailog from "./editTodoDailog";
 
 const DateAndTimeColRow = () => {
   const [delay, setDelay] = useState(1.3);

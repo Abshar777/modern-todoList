@@ -10,7 +10,6 @@ import DayAndWeekContext, { DayAndWeekContextType } from "@/context/dayAndWeek";
 import { useContext, useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import EditTodoDailog from "@/components/global/editTodoDailog";
-import Test from "../test";
 import AddTodoDialog from "@/components/global/addTodoDialog";
 import Info from "@/components/global/info";
 import ConformModal from "@/components/global/conformModal";

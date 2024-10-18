@@ -3,7 +3,6 @@ import {
   DialogContent,
   DialogDescription,
   DialogFooter,
-  DialogTrigger,
   DialogHeader,
   DialogTitle,
   DialogOverlay,
