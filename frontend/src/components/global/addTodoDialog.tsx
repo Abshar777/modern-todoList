@@ -79,6 +79,7 @@ const AddTodoDialog = () => {
 
   return (
     <Dialog
+    open={showDialog.open}
     onOpenChange={open=>!open&&closeDailog()}
     >
       <DialogOverlay className="hidden"></DialogOverlay>

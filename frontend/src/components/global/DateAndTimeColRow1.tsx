@@ -109,9 +109,6 @@ const DateAndTimeColRow = () => {
           />
         </div>
       </ScrollArea>
-      <AddTodoDialog/>
-      <Info/>
-    
     </div>
   );
 };

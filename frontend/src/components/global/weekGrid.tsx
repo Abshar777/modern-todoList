@@ -2,7 +2,7 @@ import { addDays } from "date-fns";
 import { AnimationControls } from "framer-motion";
 import DateHeader from "./DateHeader";
 import TimeSlot from "./TimeSlot";
-import React, { useContext, useMemo } from "react";
+import React, { useContext } from "react";
 import DayAndWeekContext, { DayAndWeekContextType } from "@/context/dayAndWeek";
 import { useSelector } from "react-redux";
 import { RootState } from "@/store/store";
@@ -29,7 +29,7 @@ const WeekGrid = ({
   const { todo: todos } = useSelector((state: RootState) => state.Todo);
   let starting: any = undefined;
 
-  const { startOfCurrentWeek, getSameDayEvent, getEventOnTime } =
+  const { startOfCurrentWeek, } =
     useContext(DayAndWeekContext) as DayAndWeekContextType;
 
   return (
@@ -37,10 +37,6 @@ const WeekGrid = ({
       {daysOfWeek.map((day, dayIndex) => {
         const currentDate = addDays(startOfCurrentWeek, dayIndex);
         const formattedDate = currentDate.getDate();
-        const filteredEvents = useMemo(
-          () => getSameDayEvent(todos, currentDate),
-          [currentDate, todos]
-        );
 
         
 
@@ -62,12 +58,8 @@ const WeekGrid = ({
               let nextTodo=todos[currentDate+hoursOfDay[hourIndex+1]]
               if (todos[currentDate + hour]) {
                 todo = todos[currentDate + hour];
-                starting = todo; 
-               
-                
+                starting = todo;   
               }
-
-         
               return (
                 <TimeSlot
                
@@ -86,7 +78,6 @@ const WeekGrid = ({
                 />
               );
             })}
-            {/*    */}
           </div>
         );
       })}

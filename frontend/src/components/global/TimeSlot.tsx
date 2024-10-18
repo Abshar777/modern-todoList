@@ -38,7 +38,6 @@ const TimeSlot = ({
   };
 
 
-  if (nextTodo) console.log("ind", nextTodo);
   const { startOfCurrentWeek, dailogStateChange, hoursOfDay } = useContext<
     DayAndWeekContextType | undefined
   >(DayAndWeekContext) as DayAndWeekContextType;
@@ -140,7 +139,7 @@ const TimeSlot = ({
               <ContextMenuItem
                 className="cursor-pointer"
                 onSelect={(e) => {
-                  // e.preventDefault();
+                  e.preventDefault();
                   showInfoFn(todo);
                 }}
               >
@@ -159,7 +158,7 @@ const TimeSlot = ({
                 className="cursor-pointer"
                 onSelect={(e) => {
                   e.preventDefault();
-                  // showModalFn(todo, dltTodo);
+                  showModalFn(todo, dltTodo);
                 }}
               >
                 delete
