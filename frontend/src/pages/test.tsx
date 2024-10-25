@@ -20,6 +20,9 @@ import DayAndWeekContext, { DayAndWeekContextType } from "@/context/dayAndWeek";
 import { useContext, useState } from "react";
 
 const Test = () => {
+  const jj=(e:React.MouseEvent<HTMLDivElement, MouseEvent>)=>{
+
+  }
     const [open, setopen] = useState(false)
   const { dailogStateChange } = useContext(
     DayAndWeekContext
@@ -48,7 +51,7 @@ const Test = () => {
                 account and remove your data from our servers.
               </DialogDescription>
             </DialogHeader>
-
+        <div className="" onClick={jj}></div>
             <DialogFooter>
               <DialogClose></DialogClose>
               <DialogClose>Conform</DialogClose>
